@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sweet Bliss Cakes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff0f5;
+      color: #4b0082;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      background-color: #ff69b4;
+      padding: 1em;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    nav .logo img {
+      height: 50px;
+      margin-left: 1em;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+      padding: 0;
+      margin-right: 2em;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero-section {
+      background-color: #ffb6c1;
+      padding: 4em 1em;
+      text-align: center;
+      color: #4b0082;
+    }
+
+    .section {
+      padding: 3em 1em;
+      max-width: 1000px;
+      margin: auto;
+      border-top: 4px dashed #ff69b4;
+    }
+
+    .gallery {
+      display: flex;
+      gap: 2em;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .cake-card {
+      width: 220px;
+      text-align: center;
+      margin-bottom: 1.5em;
+    }
+
+    .cake-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .cake-card b {
+      display: block;
+      margin-top: 0.5em;
+      font-size: 1.1em;
+    }
+
+    .cake-card p {
+      font-size: 0.95em;
+      color: #333;
+    }
+
+    h2 {
+      color: #c71585;
+      text-align: center;
+    }
+
+    p, ul, blockquote {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    blockquote {
+      background-color: #ffe4ec;
+      padding: 1em;
+      border-left: 5px solid #ff69b4;
+      margin: 1em 0;
+      border-radius: 5px;
+    }
+
+    footer {
+      background-color: #ff69b4;
+      color: white;
+      text-align: center;
+      padding: 2em 1em;
+      margin-top: 2em;
+    }
+
+    .contact-info h3 {
+      margin-bottom: 0.2em;
+    }
+
+    .contact-info p {
+      font-size: 1.2em;
+    }
+
+    /* Media Queries for Responsiveness */
+    @media only screen and (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 1.5em;
+      }
+
+      .hero-section {
+        padding: 2em 1em;
+      }
+
+      .section {
+        padding: 2em 1em;
+      }
+
+      .gallery {
+        gap: 1.5em;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .cake-card {
+        width: 90%;
+      }
+
+      footer {
+        padding: 1.5em 1em;
+      }
+
+      .contact-info p {
+        font-size: 1em;
+      }
+    }
+
+    @media only screen and (max-width: 480px) {
+      .hero-section h1 {
+        font-size: 1.5em;
+      }
+
+      .hero-section p {
+        font-size: 1em;
+      }
+
+      .cake-card {
+        width: 100%;
+      }
+
+      nav .logo img {
+        height: 40px;
+      }
+
+      footer {
+        padding: 1em 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="https://ci3.googleusercontent.com/meips/ADKq_NYuI7wYFOlH7h_YZYnJlTPgqTNTBMhi7Tw1Iw89SlYFptDuKbDop0FfjEy1-t1-sfH1hNlUOXwVgHikQaulHRwz60IYYlYFe1JDbKqeWoHXA3LED3H6ghK5qi8_eEe5G53wwFoLxgkbxEXF8dKGwW5kEE3VD95u4wKMEzQR7CywRWLRZBGVE155UKdPQGqHG-GQqa7NaQlgaqUOSoL_zP4JWg=s0-d-e1-ft#https://dynamic.design.com/preview/logodraft/ab24cd5f-15d5-4e87-8024-fdb57bc7e1d8/image/large.png?bust=97b78d25-d014-4a7c-b7a4-c8b7545d206a" alt="Logo">
+    </div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div id="home" class="hero-section">
+    <h1>Welcome to Sweet Bliss Cakes</h1>
+    <p>Delight in every bite!</p>
+  </div>
+
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Elegant custom-designed cakes for weddings, birthdays & more</li>
+      <li>Freshly baked cupcakes and pastries available daily</li>
+      <li>Dessert catering for all types of celebrations</li>
+      <li>Hand-crafted seasonal and festive gift boxes</li>
+    </ul>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>Sweet Bliss Cakes began with a simple idea: to spread joy through the art of baking. Every cake tells a story and every bite delivers a smile. We blend tradition with creativity, making desserts that not only taste amazing but also look like edible masterpieces.</p>
+  </section>
+
+  <section id="portfolio" class="section">
+    <h2>Our Portfolio</h2>
+    <div class="gallery">
+      <div class="cake-card">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=400&q=80" alt="Truffle Cake">
+        <b>Truffle Cake</b>
+        <p>Rich chocolate layers with silky ganache, our Truffle Cake is a luxurious indulgence for true chocolate lovers.</p>
+      </div>
+      <div class="cake-card">
+        <img src="Black forest cake.png" alt="Black Forest Cake">
+        <b>Black Forest</b>
+        <p>Classic layers of chocolate sponge, whipped cream and cherries, made even more special by Sweet Bliss magic.</p>
+      </div>
+      <div class="cake-card">
+        <img src="Red velvet cake.png" alt="Red Velvet Cake">
+        <b>Red Velvet</b>
+        <p>A romantic favorite with a velvety texture and cream cheese frosting, baked with passion at Sweet Bliss Cakes.</p>
+      </div>
+      <div class="cake-card">
+        <img src="Chocolate cake.png" alt="Chocolate Cake">
+        <b>Chocolate Cake</b>
+        <p>Moist, rich, and heavenly – our signature chocolate cake melts hearts with every bite.</p>
+      </div>
+      <div class="cake-card">
+        <img src="Pineapple cake.png" alt="Pineapple Cake">
+        <b>Pineapple Cake</b>
+        <p>Light and fruity, with real pineapple chunks, our Pineapple Cake is summer joy served on a plate.</p>
+      </div>
+      <div class="cake-card">
+        <img src="blue moon cake.png" alt="Blue Moon Cake">
+        <b>Blue Moon Cake</b>
+        <p>A dreamy creation with vanilla and blueberry swirls under a starry glaze – perfect for night owls and dreamers.</p>
+      </div>
+      <div class="cake-card">
+        <img src="strawberry cake.png" alt="Strawberry Cake">
+        <b>Strawberry Cake</b>
+        <p>Fluffy sponge layered with fresh strawberries and cream – a refreshing burst of sweetness in every slice.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="section">
+    <h2>What Our Customers Say</h2>
+    <blockquote>
+      "Sweet Bliss Cakes made our engagement extra special. The cake was not just beautiful but delicious beyond words!" – Ayesha K.
+    </blockquote>
+    <blockquote>
+      "I've tried cakes from many places, but nothing beats the flavor and creativity here. Truly blissful!" – Mehul T.
+    </blockquote>
+    <blockquote>
+      "The team is super friendly, and their work is full of passion. My birthday cake was the highlight of the evening." – Rina G.
+    </blockquote>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>We are always there for you 24/7 to add a sweetness in your life anytime, anywhere.</p>
+    <div class="contact-info">
+      <h3>Mail Us:</h3>
+      <p>sweetbliss@example.com</p>
+      <h3>Contact Number:</h3>
+      <p>+91 98765 43210</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sweet Bliss Cakes. All rights reserved.</p>
+  </footer>
+</body>
+</html>
